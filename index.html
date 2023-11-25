@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Egypt Explorer</title>
+    <link rel="icon" type="x-icon" href="/Images/browser.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.css" />
+  </head>
+  <body>
+    <div class="icons">
+      <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+      <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <!-- Nav bar -->
+    <header>
+      <nav
+        class="navbar navbar-expand-md navbar-light bg-light fixed-top"
+        style="opacity: 0.8"
+      >
+        <div class="container-fluid">
+          <a href="" class="navbar-brand">
+            <img class="logo" src="Images/logo.png" alt="" />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse bg-light" id="collapsibleNavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ABOUT US</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  >TOURS</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Cairo</a></li>
+                  <li><a class="dropdown-item" href="#">Alexandria</a></li>
+                  <hr class="m-2" />
+                  <li><a class="dropdown-item" href="#">Luxor</a></li>
+                  <li><a class="dropdown-item" href="#">Aswan</a></li>
+                  <li><a class="dropdown-item" href="#">Sharm El-Sheikh</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Discover More...</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT</a>
+              </li>
+            </ul>
+
+            <form class="navbar-form ml-auto">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control rounded-3"
+                  placeholder="Search"
+                />
+                <div class="input-group-append">
+                  <button type="submit" class="btn btn-default mx-3">
+                    Search
+                  </button>
+                </div>
+                <div class="input-group-append">
+                  <button type="submit" class="btn btn-default signup">
+                    Sign Up
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Section1 -->
+    <main>
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Images/section1-img1.jpg" class="d-block w-100" />
+            <div class="carousel-caption rounded-3">
+              <p class="text-dark section1-p">GIZA</p>
+              <p class="text-dark">Where the huge pyramids exist!</p>
+              <a href="#" class="btn btn-info text-shadow" target="_blank"
+                >Visit Us</a
+              >
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Images/section1-img2.jpg" class="d-block w-100" />
+            <div class="carousel-caption rounded-3">
+              <p class="text-dark section1-p">ASWAN</p>
+              <p class="text-dark">Where you can ride a comfy boat in Nile</p>
+              <a href="#" class="btn btn-info text-shadow" target="_blank"
+                >Visit Us</a
+              >
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Images/section1-img3.jpg" class="d-block w-100" />
+            <div class="carousel-caption rounded-3">
+              <p class="text-dark section1-p">Hurghada</p>
+              <p class="text-dark">
+                Where you can go diving and snorkling to discover fantastic
+                creatures
+              </p>
+              <a href="#" class="btn btn-info text-shadow" target="_blank"
+                >Visit Us</a
+              >
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Images/section1-img4.jpg" class="d-block w-100" />
+            <div class="carousel-caption rounded-3">
+              <p class="text-dark section1-p">Sharm El-Sheikh</p>
+              <p class="text-dark">
+                Where you can enjoy the finest beachs on the Red Sea
+              </p>
+              <a href="#" class="btn btn-info text-shadow" target="_blank"
+                >Visit Us</a
+              >
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </main>
+
+    <!-- Section2 -->
+    <section>
+      <div class="container section2">
+        <h2 class="section2-h2">Welcome to Egypt Explorer</h2>
+        <p>
+          Here we provide the best plans for tourism in Egypt for more detaile
+          you can go through this button
+        </p>
+        <button class="btn section2-btn rounded-3 ms-3">Learn more</button>
+      </div>
+    </section>
+
+    <!-- Section3 -->
+    <section>
+      <div class="container section3">
+        <h2 class="section2-h2">Popular Visited Places</h2>
+        <div class="accordion" id="accordioncollapse">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed shadow section3-btn"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Giza
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordioncollapse"
+            >
+              <div class="accordion-body section3-description">
+                Major tourist destinations include the millennia-old monuments
+                in the Nile Valley. Principal among them are the Pyramids and
+                Great Sphinx at Giza
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed shadow section3-btn"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Luxor
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordioncollapse"
+            >
+              <div class="accordion-body section3-description">
+                Luxor, about 500 km south of Cairo, is the site of the ancient
+                city of Thebes. It includes the ruins of the temple complexes at
+                Karnak and Luxor, which stand within the modern city. On the
+                opposite side of the Nile River lie the monuments, temples and
+                tombs on the West Bank Necropolis, which include the Valley of
+                the Kings and Valley of the Queens.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed shadow section3-btn"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Sinai
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordioncollapse"
+            >
+              <div class="accordion-body section3-description">
+                Sinai has the beach resorts of Sharm el-Sheikh, Dahab, Nuweiba
+                and Taba as well as locations mentioned in the Bible such as
+                Mount Sinai ("Jabal Musa"). Saint Catherine's Monastery may be
+                the oldest working Christian monastery in the world.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section4 -->
+    <section>
+      <div class="container section4">
+        <h2 class="section4-h2">Egypt Explorer Translator</h2>
+        <p class="section4-p1 ms-2">
+          It helps tourists to communicate between each other here are 3
+          translators from/to different languages:
+          <p class="section4-p2 ms-4"> 
+            1- Write the text you want to translate.
+            <br />
+            2- Copy it.
+            <br />
+            3- Follow the link to be translate your text.
+          </p>
+        </p>
+        <div class="container justify-content-between">
+          <div class="section4-item p-2 rounded-3 mb-3">
+            <p class="section4-item-p1 ms-3 mt-3 text-center">Arabic To English</p>
+            <textarea class="form-control w-100 mb-2 shadow-lg" rows="7"></textarea>
+            <div class="d-flex justify-content-end">
+              <button class="btn rounded-3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copy Text!">Copy</button>
+              <a href="https://translate.google.com/?sl=ar&tl=en&op=translate" target="_blank">
+                <button class="btn rounded-3 ms-2" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Go Translate!">Translate</button>
+              </a>            
+            </div>
+          </div>
+          <div class="section4-item p-2 rounded-3 mb-3">
+            <p class="section4-item-p1 ms-3 mt-3 text-center">Arabic To French</p>
+            <textarea class="form-control w-100 mb-2 shadow-lg" rows="7"></textarea>
+            <div class="d-flex justify-content-end">
+              <button class="btn rounded-3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copy Text!">Copy</button>
+              <a href="https://translate.google.com/?sl=ar&tl=fr&op=translate" target="_blank">
+                <button class="btn rounded-3 ms-2" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Go Translate!">Translate</button>
+              </a>            
+            </div>
+          </div>
+          <div class="section4-item p-2 rounded-3 mb-3">
+            <p class="section4-item-p1 ms-3 mt-3 text-center">Arabic To Deutch</p>
+            <textarea class="form-control w-100 mb-2 shadow-lg" rows="7"></textarea>
+            <div class="d-flex justify-content-end">
+              <button class="btn rounded-3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copy Text!">Copy</button>
+              <a href="https://translate.google.com/?sl=ar&tl=de&op=translate" target="_blank">
+                <button class="btn rounded-3 ms-2" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Go Translate!">Translate</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section5 -->
+    <section>
+      <div class="container-fluid section5"></div>
+    </section>
+
+    <!-- Section6 -->
+    <section>
+      <div class="container section6">
+        <h2 class="text-center section6-h2 mb-5">Most Popular Tours</h2>
+        <div class="row justify-content-around mb-5">
+          <div class="card section6-item col-lg-3 col-md-4 col-sm-6 m-1 mb-5 shadow-lg">
+            <img class="card-img-top mt-3" src="Images/Giza.jpg" alt="Card image" height="400px">
+            <div class="card-body">
+              <h4 class="card-title">Giza</h4>
+              <p class="card-text">City that is famous for its iconic pyramids, including the Great Pyramid of Khufu, and the enigmatic Sphinx that stands guard nearby.</p>
+              <a href="#" class="btn btn-primary">View Tours</a>
+            </div>
+          </div>
+          <div class="card section6-item col-lg-3 col-md-4 col-sm-6 m-1 mb-5 shadow-lg">
+            <img class="card-img-top mt-3" src="Images/Alexandria.jpg" alt="Card image" height="400px">
+            <div class="card-body">
+              <h4 class="card-title">Alexandria</h4>
+              <p class="card-text">City steeped in history, home to the Bibliotheca Alexandrina, Catacombs of Kom El Shoqafa, and a picturesque Mediterranean coastline.</p>
+              <a href="#" class="btn btn-primary">View Tours</a>
+            </div>
+          </div>
+          <div class="card section6-item col-lg-3 col-md-4 col-sm-6 m-1 mb-5 shadow-lg">
+            <img class="card-img-top mt-3" src="Images/Aswan.jpg" alt="Card image" height="400px">
+            <div class="card-body">
+              <h4 class="card-title">Aswan</h4>
+              <p class="card-text">Aswan, with its serene Nile views and the stunning Philae Temple, is a tranquil gem in Upper Egypt.</p>
+              <a href="#" class="btn btn-primary">View Tours</a>
+            </div>
+          </div>
+          <div class="card section6-item col-lg-3 col-md-4 col-sm-6 m-1 mb-5 shadow-lg">
+            <img class="card-img-top mt-3" src="Images/Hurghada.jpg" alt="Card image" height="400px">
+            <div class="card-body">
+              <h4 class="card-title">Hurghada</h4>
+              <p class="card-text"> Hurghada, situated on the Red Sea coast, is a vibrant resort town known for its underwater beauty, offering some of the best diving and snorkeling experiences.
+              </p>
+              <a href="#" class="btn btn-primary">View Tours</a>
+            </div>
+          </div>
+          <div class="card section6-item col-lg-3 col-md-4 col-sm-6 m-1 mb-5 shadow-lg">
+            <img class="card-img-top mt-3" src="Images/Siwa.jpg" alt="Card image" width="400px" height="400px">
+            <div class="card-body">
+              <h4 class="card-title">Siwa</h4>
+              <p class="card-text">Siwa, an oasis in the Western Desert, is famed for its unique culture and landscapes, including the Temple of the Oracle and the healing saltwater springs.</p>
+              <a href="#" class="btn btn-primary">View Tours</a>
+            </div>
+          </div>
+          <div class="card section6-item col-lg-3 col-md-4 col-sm-6 m-1 mb-5 shadow-lg">
+            <img class="card-img-top mt-3" src="Images/Sharm EL-Sheikh.jpg" alt="Card image" height="400px">
+            <div class="card-body">
+              <h4 class="card-title">Sharm EL-Sheikh</h4>
+              <p class="card-text">Sharm El-Sheikh is a paradise for beach lovers and divers, boasting clear waters and coral reefs that teem with marine life.</p>
+              <a href="#" class="btn btn-primary">View Tours</a>
+            </div>
+          </div>
+          <div class="card section6-item col-lg-3 col-md-4 col-sm-6 m-1 mb-5 shadow-lg">
+            <img class="card-img-top mt-3" src="Images/New Capital.jpg" alt="Card image" height="400px">
+            <div class="card-body">
+              <h4 class="card-title">New Capital</h4>
+              <p class="card-text">Egypt's new administrative capital, still under development, promises modernity and innovation, with state-of-the-art infrastructure and grand architectural designs.</p>
+              <a href="#" class="btn btn-primary">View Tours</a>
+            </div>
+          </div>
+          <div class="card section6-item col-lg-3 col-md-4 col-sm-6 m-1 mb-5 shadow-lg">
+            <img class="card-img-top mt-3" src="Images/Luxor.jpg" alt="Card image" height="400px">
+            <div class="card-body">
+              <h4 class="card-title">Luxor</h4>
+              <p class="card-text">Luxor is often referred to as an open-air museum due to its remarkable archaeological sites, such as the Karnak and Luxor Temples, and the Valley of the Kings.
+              </p>
+              <a href="#" class="btn btn-primary">View Tours</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section7 -->
+    <section>
+      <div class="container-fluid section7"></div>
+    </section>
+
+    <!-- Section8 -->
+    <section>
+      <div class="container section8 mx-auto">
+        <h2 class="text-center section8-h2 mb-1">Our Team</h2>
+        <p class="text-center section8-p mb=5">Special thank to them</p>
+        <div class="row justify-content-between">
+          <div class="section8-item card card1 col-lg-3 col-md-5 col-sm-12 mb-4 rounded-4">
+            <div class="card-overlay rounded-4">
+              <div class="card-body">
+                <img class="rounded-circle" src="Images/section8-img1.jpg" width="100">
+                  <p class="text-white mt-2 ms-2 mb-0">Lane Sam</p>
+                  <p class="text-white mt-0 ms-2">Director of UI/UX</p>
+              </div>
+            </div>
+          </div>
+          <div class="section8-item card card2 col-lg-3 col-md-5 col-sm-12 mb-4 rounded-4">
+            <div class="card-overlay rounded-4">
+              <div class="card-body">
+                <img class="rounded-circle" src="Images/section8-img2.jpg" width="100">
+                  <p class="text-white mt-2 ms-2 mb-0">Emy Jackson</p>
+                  <p class="text-white mt-0 ms-2">Director of UI/UX</p>
+              </div>
+            </div>
+          </div>
+          <div class="section8-item card card3 col-lg-3 col-md-5 col-sm-12 mb-4 rounded-4">
+            <div class="card-overlay rounded-4">
+              <div class="card-body">
+                <img class="rounded-circle" src="Images/section8-img3.jpg" width="100">
+                  <p class="text-white mt-2 ms-2 mb-0">Jasmine Blake</p>
+                  <p class="text-white mt-0 ms-2">Director of UI/UX</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Section9 -->
+    <section>
+      <div class="container section9 p-0">
+        <h2 class="text-center section9-h2 mb-5">Recent News</h2>
+        <div class="row container p-0 mx-auto">
+          <div class="section9-item container col-12 rounded-4 p-0">
+            <div class="section9-card-body col-lg-9 col-md-8 col-sm-12 p-0">
+              <div class="ff">
+                <p class="section9-p1 mb-1">Hurghada Trip</p>
+                <p class="section9-p2"><i class="fas fa-calendar-alt mr-2"></i>&nbsp;Tue, Nov 8th 2023</p>
+                <p class="section9-line"></p>
+                <p class="section9-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat
+                  asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo
+                  accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo
+                  iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!
+                </p>
+                <button class="btn me-2">
+                  <i class="fas fa-tag mr-2"></i>&nbsp;Podcast
+                </button>
+                <button class="btn me-2">
+                  <i class="fas fa-clock mr-2"></i>&nbsp;55 mins.
+                </button>
+                <button class="btn">
+                    <i class="fas fa-play mr-2"></i>&nbsp;Play Episode
+                </button>
+              </div>
+            </div>
+            <div class="section9-img-div col-lg-3 col-md-4 col-sm-0 bg-light p-0">
+              <img src="Images/section9-img1.jpg" alt="" class="section9-img w-100">
+            </div>
+          </div>
+          <div class="section9-item container rev col-12 rounded-4 p-0">
+            <div class="section9-card-body section9-card-body-r col-lg-9 col-md-8 col-sm-12 p-0">
+              <div class="ff">
+                <p class="section9-p1 mb-1">Dahab Trip</p>
+                <p class="section9-p2"><i class="fas fa-calendar-alt mr-2"></i>&nbsp;Tue, Nov 8th 2023</p>
+                <p class="section9-line"></p>
+                <p class="section9-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat
+                  asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo
+                  accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo
+                  iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!
+                </p>
+                <button class="btn me-2">
+                  <i class="fas fa-tag mr-2"></i>&nbsp;Podcast
+                </button>
+                <button class="btn me-2">
+                  <i class="fas fa-clock mr-2"></i>&nbsp;55 mins.
+                </button>
+                <button class="btn">
+                    <i class="fas fa-play mr-2"></i>&nbsp;Play Episode
+                </button>
+              </div>
+            </div>
+            <div class="section9-img-div col-lg-3 col-md-4 col-sm-0 bg-light p-0">
+              <img src="Images/section9-img2.jpg" alt="" class="section9-img w-100">
+            </div>
+          </div>
+          <div class="section9-item container col-12 rounded-4 p-0">
+            <div class="section9-card-body col-lg-9 col-md-8 col-sm-12 p-0">
+              <div class="ff">
+                <p class="section9-p1 mb-1">Luxor Trip</p>
+                <p class="section9-p2"><i class="fas fa-calendar-alt mr-2"></i>&nbsp;Tue, Nov 8th 2023</p>
+                <p class="section9-line"></p>
+                <p class="section9-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat
+                  asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo
+                  accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo
+                  iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!
+                </p>
+                <button class="btn me-2">
+                  <i class="fas fa-tag mr-2"></i>&nbsp;Podcast
+                </button>
+                <button class="btn me-2">
+                  <i class="fas fa-clock mr-2"></i>&nbsp;55 mins.
+                </button>
+                <button class="btn">
+                    <i class="fas fa-play mr-2"></i>&nbsp;Play Episode
+                </button>
+              </div>
+            </div>
+            <div class="section9-img-div col-lg-3 col-md-4 col-sm-0 bg-light p-0">
+              <img src="Images/section9-img3.jpg" alt="" class="section9-img w-100">
+            </div>
+          </div>
+          <div class="section9-item container rev col-12 rounded-4 p-0">
+            <div class="section9-card-body section9-card-body-r col-lg-9 col-md-8 col-sm-12 p-0">
+              <div class="ff">
+                <p class="section9-p1 mb-1">Aswan Trip</p>
+                <p class="section9-p2"><i class="fas fa-calendar-alt mr-2"></i>&nbsp;Tue, Nov 8th 2023</p>
+                <p class="section9-line"></p>
+                <p class="section9-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat
+                  asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo
+                  accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo
+                  iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!
+                </p>
+                <button class="btn me-2">
+                  <i class="fas fa-tag mr-2"></i>&nbsp;Podcast
+                </button>
+                <button class="btn me-2">
+                  <i class="fas fa-clock mr-2"></i>&nbsp;55 mins.
+                </button>
+                <button class="btn">
+                    <i class="fas fa-play mr-2"></i>&nbsp;Play Episode
+                </button>
+              </div>
+            </div>
+            <div class="section9-img-div col-lg-3 col-md-4 col-sm-0 bg-light p-0">
+              <img src="Images/section9-img4.jpg" alt="" class="section9-img w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container section11">
+        <div class="section11-img"><img src="Images/logo.png" class="mx-auto text-center" width="140" height="50px"></div>
+        <p class="text-center section11-p1">EGYPT EXPLORER</p>
+          <hr>
+        <div class="row mx-auto">
+          <div class="section11-item col-lg-4 col-sm-12 text-center">
+            <p class="section11-p2">CONTACT</p>
+            <p>Address: El-Sheikh Zayed</p>
+            <p>Phone 000-000-000-00</p>
+            <p>Fax: 00-00-00</p>
+          </div>
+          <div class="col-lg-4 col-sm-12 text-center">
+            <p class="section11-p2">USEFULL LINKS</p>
+            <p>Address: El-Sheikh Zayed</p>
+            <p>Phone 000-000-000-00</p>
+            <p>Fax: 00-00-00</p>
+          </div>
+          <div class="col-lg-4 col-sm-12 text-center">
+            <p class="section11-p2">FOLLOW US</p>
+            <a href="#"><i class="fa-brands fa-square-facebook f-icon"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram f-icon"></i></a>
+            <a href="#"><i class="fa-brands fa-square-x-twitter f-icon"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin f-icon"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
